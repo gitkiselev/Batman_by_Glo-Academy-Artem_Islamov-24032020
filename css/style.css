@@ -1,13 +1,27 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #0A090A;
     color: #fff;
     font-family: 'Roboto', sans-serif;
-    background-image: url('../img/main-bg.jpg');
+    background-image: url('../img/main-bg.png');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+    -webkit-touch-callout: none; /* iOS Safari */
+          -webkit-user-select: none; /* Safari */
+           -khtml-user-select: none; /* Konqueror HTML */
+             -moz-user-select: none; /* Firefox */
+              -ms-user-select: none; /* Internet Explorer/Edge */
+                  user-select: none; /* Non-prefixed version, currently
+                                        supported by Chrome and Opera */
 }
 
+/* input, button {
+    outline: 0;
+} */
 .container {
     max-width: 1140px;
     margin: auto;
@@ -44,6 +58,12 @@ body {
     line-height: 16px;
 }
 
+.bookmark {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
 ::-webkit-input-placeholder { /* Chrome */
     color: #AEAEAE;
 }
