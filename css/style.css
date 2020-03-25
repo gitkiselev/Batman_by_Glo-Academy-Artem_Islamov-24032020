@@ -6,17 +6,10 @@ body {
     background-color: #0A090A;
     color: #fff;
     font-family: 'Roboto', sans-serif;
-    background-image: url('../img/main-bg.png');
+    background-image: url('../img/main-bg.jpg');
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: cover;
-    -webkit-touch-callout: none; /* iOS Safari */
-          -webkit-user-select: none; /* Safari */
-           -khtml-user-select: none; /* Konqueror HTML */
-             -moz-user-select: none; /* Firefox */
-              -ms-user-select: none; /* Internet Explorer/Edge */
-                  user-select: none; /* Non-prefixed version, currently
-                                        supported by Chrome and Opera */
+    background-size: 100%;
 }
 
 /* input, button {
@@ -41,6 +34,8 @@ body {
     font-weight: 900;
     font-size: 24px;
     line-height: 28px;
+    text-decoration: none;
+    color: #fff;
 }
 
 .search {
@@ -57,6 +52,7 @@ body {
     color: #AEAEAE;
     font-size: 14px;
     line-height: 16px;
+    outline: 0;
 }
 
 .bookmark {
@@ -84,6 +80,7 @@ body {
     background-color: transparent;
     border: none;
     padding: 10px 18px;
+    outline: none;
 }
 
 .user {
@@ -96,7 +93,12 @@ body {
   width: 40px;
   height: 40px;  
   border-radius: 50%;
+  overflow: hidden;
   object-fit: cover;
+}
+
+.avatar-image {
+    width:100%;
 }
 
 .title {
@@ -222,10 +224,16 @@ body {
     text-decoration: underline;
 }
 
+.actors-list-link {
+    color: #000;
+}
 .full-info {
     flex: 0.97;
 }
 
+.tabs {
+    margin-bottom: 40px;
+}
 .full-content {
     display: flex;
     justify-content: space-between;
@@ -245,4 +253,16 @@ body {
 
 .tabs-item-active {
     color: #FF8F27;
+}
+
+.tabs-item:last-child {
+    margin-right: 0;
+}
+
+.text {
+    margin-top: 0;
+}
+
+.bookmark-added {
+    vertical-align: middle;
 }
