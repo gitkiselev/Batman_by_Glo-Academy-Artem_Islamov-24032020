@@ -16,10 +16,13 @@ body {
 .container {
     max-width: 1140px;
     margin: auto;
+    min-height: 100%;
+    height: 100%;
 }
 
 .header {
     display: flex;
+    display: -ms-flexbox;
     align-items: center;
     justify-content: space-between;
     padding-top: 45px;
@@ -27,8 +30,6 @@ body {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
-    justify-content: space-between;
-    height: 100%;
 }
 
 
@@ -40,18 +41,22 @@ body {
     line-height: 28px;
     text-decoration: none;
     color: #fff;
+    
+}
+.header-logo {
+    margin-right: 4%;
 }
 
 .search {
     display: flex;
     align-items: center;
-    flex: 0.8;
+    flex: 1;
+    /* flex: 0.8; */
 }
 .search-input {
     /* flex: 1; */
     width: 100%;
     max-width: 800px;
-    
     background: rgba(196, 196, 196, 0.5);
     border-radius: 5px;
     padding: 12px 18px;
@@ -209,6 +214,7 @@ body {
     display: block;
     margin-top: -40%;
     margin-bottom: 20px;
+    width: 182px;
 }
 
 .button {
@@ -291,6 +297,10 @@ body {
 
 .bookmark-added {
     vertical-align: middle;
+}
+
+.subscribe {
+    width: 100%;
 }
 
 .subscribe-title {
@@ -419,15 +429,25 @@ body {
     }
 
     .content {
-        /* flex-wrap: wrap; */
+        flex-wrap: wrap;
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
+        background-color: #fff;
     }
 
     .short-info {
+        /* flex-basis: 100%; */
+        width: 100%;
         margin-bottom: 5%;
+        
     }
 
+    .poster {
+        text-align: center;
+    }
+    .full-info {
+        flex-basis: 100%;
+    }
     .actors-list, .actors-title {
         display: none;
     }
