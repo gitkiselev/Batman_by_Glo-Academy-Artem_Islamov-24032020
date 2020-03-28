@@ -300,7 +300,7 @@ body {
 }
 
 .subscribe {
-    width: 100%;
+    /* width: 100%; */
 }
 
 .subscribe-title {
@@ -366,6 +366,9 @@ body {
         max-width: 740px;
     }
 
+    .subscribe {
+        flex-basis: 100%;
+    }
     .tabs {
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -447,6 +450,7 @@ body {
     }
     .full-info {
         flex-basis: 100%;
+        /* width: 100%; */
     }
     .actors-list, .actors-title {
         display: none;
